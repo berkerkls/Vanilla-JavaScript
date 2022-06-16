@@ -1,0 +1,156 @@
+$color: red;
+$background-color: #333;
+$max-width: 1100px;
+$dark-color: #444;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Utilities
+.success, .error, .deleted {
+    color: #f4f4f4;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+    border-radius: 12px;
+}
+
+.success {
+    background: rgb(8, 175, 8);
+}
+
+.error {
+    background: rgb(222, 68, 68);
+}
+
+.deleted {
+    background: rgb(238, 184, 85);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $background-color;
+    font-family:Arial, Helvetica, sans-serif;
+
+    header {
+        padding: 2rem 1rem;
+        max-width: 800px;
+        font-weight: 300;
+        width: 100%;
+        margin: 0 auto;
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        #book-form {
+           color: #ccc;
+
+           div {
+               display: block;
+               margin: 1rem 0;
+
+               label {
+                   display: block;
+                   padding-bottom: 0.5rem;
+               }
+               input {
+                   width: 100%;
+                   border: none;
+                   background-color: $dark-color;
+                   padding: 10px 20px;
+                   border-radius: 12px;
+                   outline: none;
+                   color: #f4f4f4;
+               }
+           }
+        }
+
+        #submit {
+            background-color: $dark-color;
+            border: none;
+            color: #f4f4f4;
+            padding: 10px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s ease-in;
+
+            &:hover {
+                background-color: $background-color;
+            }
+        }
+    }
+    hr {
+        border: 1px solid $dark-color;
+    }
+    
+    #collection {
+        color: #f4f4f4;
+        font-size: 1.5rem;
+        font-weight: 200px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        list-style: none;
+        margin: 0 auto;
+        li {
+            text-align: center;
+
+        }
+        #title-value > ul > li {
+            list-style: none;
+            font-style:normal;
+            font-size: 1rem;
+            font-weight: 100px;
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+        }
+        #author-value > ul > li {
+            list-style: none;
+            font-style:normal;
+            font-size: 1rem;
+            font-weight: 100px;
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-bottom: 1rem;
+        }
+        #isbn-value > ul > li {
+            list-style: none;
+            font-style:normal;
+            font-size: 1rem;
+            font-weight: 100px;
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+        #delete-value > ul > li {
+            list-style: none;
+            font-style:normal;
+            font-size: 1rem;
+            font-weight: 100px;
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-bottom: 1rem;
+
+            &>a {
+                color: #f4f4f4;
+                text-decoration: none;
+                align-items: center;
+            }
+            
+        }
+    }
+}
+

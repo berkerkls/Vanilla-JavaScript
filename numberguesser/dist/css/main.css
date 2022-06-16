@@ -1,0 +1,54 @@
+:root {
+  --background-color: #d3e6e3;
+  --gray: #ccc;
+  --light: #fff;
+  --dark: #333;
+  --green: #6daca4;
+  --pink: #ac6d75;
+  --max-width: 1100px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: #fff; }
+  body .container {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    body .container h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+      color: var(--pink); }
+    body .container p {
+      margin-top: 1rem; }
+    body .container #game p {
+      color: var(--green);
+      margin-bottom: 1rem; }
+    body .container #guess-input {
+      background-color: var(--pink);
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-right: 1rem; }
+      body .container #guess-input::placeholder {
+        color: var(--background-color); }
+    body .container input {
+      border: none;
+      outline: none;
+      background: none; }
+    body .container #guess-btn {
+      color: var(--dark);
+      font-size: 1.125rem;
+      background-image: linear-gradient(to right, var(--green), var(--light));
+      border-radius: 1rem;
+      padding: 5px 10px;
+      cursor: pointer; }

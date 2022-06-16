@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.success, .error, .deleted {
+  color: #f4f4f4;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+  border-radius: 12px; }
+
+.success {
+  background: #08af08; }
+
+.error {
+  background: #de4444; }
+
+.deleted {
+  background: #eeb855; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif; }
+  body header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    font-weight: 300;
+    width: 100%;
+    margin: 0 auto; }
+    body header h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #ccc; }
+    body header #book-form {
+      color: #ccc; }
+      body header #book-form div {
+        display: block;
+        margin: 1rem 0; }
+        body header #book-form div label {
+          display: block;
+          padding-bottom: 0.5rem; }
+        body header #book-form div input {
+          width: 100%;
+          border: none;
+          background-color: #444;
+          padding: 10px 20px;
+          border-radius: 12px;
+          outline: none;
+          color: #f4f4f4; }
+    body header #submit {
+      background-color: #444;
+      border: none;
+      color: #f4f4f4;
+      padding: 10px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease-in; }
+      body header #submit:hover {
+        background-color: #333; }
+  body hr {
+    border: 1px solid #444; }
+  body #collection {
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    font-weight: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    list-style: none;
+    margin: 0 auto; }
+    body #collection li {
+      text-align: center; }
+    body #collection #title-value > ul > li {
+      list-style: none;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 100px;
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem; }
+    body #collection #author-value > ul > li {
+      list-style: none;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 100px;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-bottom: 1rem; }
+    body #collection #isbn-value > ul > li {
+      list-style: none;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 100px;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-bottom: 1rem;
+      padding-bottom: 1rem; }
+    body #collection #delete-value > ul > li {
+      list-style: none;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 100px;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-bottom: 1rem; }
+      body #collection #delete-value > ul > li > a {
+        color: #f4f4f4;
+        text-decoration: none;
+        align-items: center; }
