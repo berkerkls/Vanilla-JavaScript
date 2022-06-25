@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+:root {
+    --background-color: #0c1e3e;
+    --container-color: #122c5a;
+    --button-color: #fc0ff5;
+    --error-color: #e74c3c;
+    --success-color: #2ecc71;
+    --text-color: #38fbdb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--container-color);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px 2px var(--text-color);
+    width: 400px;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: #fc0ff5;
+    background-color: var(--background-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 1px;
+    border: 2px solid var(--button-color);
+}
+
+.form {
+    padding: 2rem 4rem;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: var(--text-color);
+}
+
+.form-control input {
+    background-color: var(--background-color);
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    color: var(--text-color);
+    display: block;
+    border: 2px solid var(--button-color);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus,
+.form-control input::placeholder {
+    outline: 0;
+    border-color: var(--button-color);
+    color:var(--text-color);
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    color: var(--error-color)
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: var(--button-color);
+    width: 100%;
+    border: 2px var(--button-color) solid;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:#0c1e3e;
+    margin-top: 20px;
+}
