@@ -3,5 +3,6 @@
 * You can see the UI of the project
 
 
+![UI movieseatBooking](https://user-images.githubusercontent.com/100119877/176028699-0bc6e0c8-a801-422b-8cf5-c96ef8d1eeda.png)
 
-(https://user-images.githubusercontent.com/100119877/176028567-29c7f37e-801f-4153-8f10-e60ca733b67b.png)
+
